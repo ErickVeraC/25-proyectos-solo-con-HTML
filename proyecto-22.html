@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 22 HTML - Erick Vera</title>
+  </head>
+  <body>
+    <!--
+    Objetivo:
+    Crea un formulario con un campo de tipo textarea,
+    email, contraseña, radio, select, checkbox, fichero,
+    fecha, numero, color y submit.
+    
+    Todos los campos deberan estar dentro de un fieldset
+    y usar el campo legend.
+    
+    Todos los campos deberan tener un label.
+    -->
+    <h1>Proyecto 22 HTML - Formulario</h1>
+    <section>
+      <form action="">
+        <fieldset>
+          <legend>Register form</legend>
+          <label for="tellUs"
+            >Tell us about you... <br />
+            <textarea name="Tell us about you" id="tellUs"></textarea></label
+          ><br />
+          <label>Email <br /><input type="email" name="email" /></label><br />
+          <label>Password <br /><input type="password" name="password" /></label
+          ><br />
+        </fieldset>
+        <fieldset>
+          <legend>Select your favourite food</legend>
+          <label>
+            <input type="radio" name="pizza" checked />
+            Pizza <input type="radio" name="hamburger" /> Hamburger</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Select your favourite band</legend>
+          <label for="favouriteBand"
+            ><select name="" id="favouriteBand">
+              <option value="strokes">Strokes</option>
+              <option value="franzFerdinand">Franz Ferdinand</option>
+              <option value="blocParty">Bloc Party</option>
+              <option value="twoDoorCinemaClub">Two Door Cinema Club</option>
+              <option value="gorillaz">Gorillaz</option>
+            </select></label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Random Questions</legend>
+          <label for="randomQuestions"
+            >Do you accept to receive more random questions?
+            <input
+              type="checkbox"
+              name="randomQuestions"
+              id="randomQuestions"
+            />
+          </label>
+          <br />
+          <label for="file"
+            >Upload your Art <input type="file" name="" id="file"
+          /></label>
+          <br />
+          <label for="date"
+            >Select your birthdate
+            <input type="date" name="birthdate" id="date"
+          /></label>
+          <br />
+          <label for="number"
+            >Select a number between 1 and 10
+            <input
+              type="number"
+              name="yourFavouriteNumber"
+              id="number"
+              min="1"
+              max="10"
+          /></label>
+          <br />
+          <label for="color"
+            >Select your favourite color
+            <input type="color" name="favouriteColor" id="color"
+          /></label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+    <footer>
+      <h4>Erick Vera Dev - 2024</h4>
+    </footer>
+  </body>
+</html>

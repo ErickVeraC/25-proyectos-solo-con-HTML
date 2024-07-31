@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 23 HTML - Erick Vera</title>
+  </head>
+  <body>
+    <!--
+    Objetivo:
+    Crea un formulario con campo de busqueda,
+    telefono, hora, url, barra de progreso, lista de datos, submit y reset.
+    Todos los campos deberan tener un label
+    -->
+    <h1>Proyecto 23 HTML - Formulario</h1>
+    <form action="">
+      <fieldset>
+        <legend>Search form</legend>
+        <label><input type="search" name="" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Phone</legend>
+        <label><input type="tel" name="" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Time</legend>
+        <label><input type="time" name="" id="" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>URL</legend>
+        <label><input type="url" name="" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Bar progress</legend>
+        <label><progress value="50" max="100"></progress></label>
+      </fieldset>
+      <fieldset>
+        <legend>List of data</legend>
+        <label>
+          <datalist id="browsers">
+            <option value="Chrome" />
+            <option value="Firefox" />
+            <option value="Internet Explorer" />
+            <option value="Opera" />
+            <option value="Safari" />
+          </datalist>
+          <input list="browsers" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Submit</legend>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Restart" />
+      </fieldset>
+    </form>
+  </body>
+</html>

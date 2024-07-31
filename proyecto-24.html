@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 24 HTML - Erick Vera</title>
+  </head>
+  <body>
+    <!--
+    Objetivo:
+    Crea un formulario con un campo de tipo texto con estas caracteristicas:
+    - Debe ser obligatorio
+    - Minimo se pueden introducir 3 caracteres y maximo 10
+    - Solo podras meter espacios y letras de A-Z en minusculas y mayusculas
+    -->
+    <main>
+      <h1>Proyecto 24 HTML - Erick Vera</h1>
+    </main>
+    <form action="">
+      <fieldset>
+        <legend>Full Name</legend>
+        <label for="fullName">
+          <input
+            type="text"
+            name="full-name"
+            pattern="[A-Za-z ]{3,10}"
+            title="Only letters and spaces are allowed"
+            id="fullName"
+            required
+          />
+        </label>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <footer>
+      <p>&copy; 2021 Erick Vera Dev. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
